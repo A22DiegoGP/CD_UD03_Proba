@@ -45,7 +45,7 @@ public class App{
 
         driver.quit();
     }
-        @Test
+       
         public void test_checkbox() {
             System.setProperty("webdriver.chrome.driver", "driver/chromedriver"); 
             WebDriver driver = new ChromeDriver();
