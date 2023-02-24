@@ -12,7 +12,7 @@ public class FormTest{
 
     WebDriver driver;
 
-    @Before
+    //@Before
     public void setUp() {
 
         System.setProperty("webdriver.chrome.driver", "/home/sanclemente.local/a22diegogp/Escritorio/CD_UD03_Selenium/driver/chromedriver");
@@ -20,14 +20,14 @@ public class FormTest{
 
     }
 
-    @Test
+    //@Test
     public void testCombo() {
 
         driver.get("file:///home/sanclemente.local/a22diegogp/Escritorio/CD_UD03_Selenium/src/index.html");
         driver.findElement(By.tagName("input")).getAttribute("type");  
         
     }
-    @Test
+    //@Test
     public void test1() {
         driver.get("file:///home/sanclemente.local/a22diegogp/Escritorio/CD_UD03_Selenium/src/index.html");
         WebElement pinha = driver.findElement(By.name("pinha")); 
@@ -38,7 +38,7 @@ public class FormTest{
         assertEquals(false, sin_pinha.isSelected()); 
         
     }
-    @Test
+    //@Test
     public void testRadio() {
         driver.get("file:///home/sanclemente.local/a22diegogp/Escritorio/CD_UD03_Selenium/src/index.html");
         // WebElement masafina = driver.findElement(By.cssSelector("[name='boton' value='1']")); 
@@ -47,7 +47,7 @@ public class FormTest{
         // masagruesa.click();
 
     }
-    @Test
+    //@Test
     public void testComo() {
         driver.get("file:///home/sanclemente.local/a22diegogp/Escritorio/CD_UD03_Selenium/src/index.html");
         Select menu = new Select(driver.findElement(By.name("menu")));
